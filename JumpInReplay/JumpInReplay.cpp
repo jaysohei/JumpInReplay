@@ -316,7 +316,7 @@ void JumpInReplay::StartPrivateMatch(std::string oldValue, CVarWrapper cvar) {
 			else if (Gamemode == 32) { GamemodeStr = "Soccar"; AdditionalMutators = ""; }//beach ball
 			else{ GamemodeStr = "Soccar"; AdditionalMutators = ""; }//normal
 			//opens private match
-			cvarManager->executeCommand("unreal_command 'open " + Arena + "?Game=TAGame.GameInfo_" + GamemodeStr + "_TA?Offline?Gametags=DisableGoalDelay,NoDemolish,UnlimitedTime"+AdditionalMutators+"'");
+			cvarManager->executeCommand("unreal_command 'open " + Arena + "?Game=TAGame.GameInfo_" + GamemodeStr +
 		}
 		cvar.setValue(false);
 	}
